@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef7ee;
+    color: #183b20;
+    text-align: center;
+}
+
+header {
+    background: #16803c;
+    color: white;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 25px 15px;
+}
+
+section {
+    background: white;
+    margin: 20px 0;
+    padding: 30px 20px;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #16803c;
+}
+
+.inicio p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.puntos {
+    background: #dff4e4;
+}
+
+#contador {
+    font-size: 60px;
+    font-weight: bold;
+    color: #16803c;
+    margin: 15px;
+}
+
+button {
+    display: block;
+    width: 90%;
+    max-width: 500px;
+    margin: 12px auto;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background: #16803c;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0d632d;
+}
+
+.recompensa {
+    background: #f0f8f1;
+    margin: 15px auto;
+    padding: 18px;
+    max-width: 500px;
+    border-radius: 12px;
+}
+
+.recompensa h3 {
+    color: #16803c;
+    margin-bottom: 8px;
+}
+
+footer {
+    background: #125c2c;
+    color: white;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    section {
+        padding: 25px 15px;
+    }
+
+    #contador {
+        font-size: 50px;
+    }
+
+    button {
+        width: 100%;
+    }
+}

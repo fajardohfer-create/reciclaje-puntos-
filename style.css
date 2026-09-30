@@ -45,27 +45,47 @@ h2 {
     color: #16803c;
 }
 
-.inicio p {
-    font-size: 18px;
+p {
     line-height: 1.6;
 }
 
-.puntos {
-    background: #dff4e4;
+
+/* FORMULARIO */
+
+form {
+    max-width: 500px;
+    margin: 20px auto 0;
+    text-align: left;
 }
 
-#contador {
-    font-size: 60px;
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
     font-weight: bold;
-    color: #16803c;
-    margin: 15px;
 }
+
+input {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #d5e8d8;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #16803c;
+}
+
+
+/* BOTONES */
 
 button {
     display: block;
     width: 90%;
     max-width: 500px;
-    margin: 12px auto;
+    margin: 15px auto;
     padding: 15px;
     border: none;
     border-radius: 12px;
@@ -78,6 +98,23 @@ button {
 button:hover {
     background: #0d632d;
 }
+
+
+/* PUNTOS */
+
+.puntos {
+    background: #dff4e4;
+}
+
+#contador {
+    font-size: 60px;
+    font-weight: bold;
+    color: #16803c;
+    margin: 15px;
+}
+
+
+/* RECOMPENSAS */
 
 .recompensa {
     background: #f0f8f1;
@@ -92,12 +129,36 @@ button:hover {
     margin-bottom: 8px;
 }
 
+
+/* DATOS */
+
+.datos {
+    text-align: left;
+}
+
+.datos p {
+    margin: 10px 0;
+}
+
+
+/* OCULTAR */
+
+.oculto {
+    display: none;
+}
+
+
+/* FOOTER */
+
 footer {
     background: #125c2c;
     color: white;
     padding: 25px;
     margin-top: 30px;
 }
+
+
+/* CELULAR */
 
 @media (max-width: 600px) {
 
@@ -115,5 +176,9 @@ footer {
 
     button {
         width: 100%;
+    }
+
+    input {
+        font-size: 16px;
     }
 }

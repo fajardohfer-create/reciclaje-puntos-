@@ -11,23 +11,72 @@
 
 <body>
 
-    <header>
-        <h1>♻️ EcoPuntos</h1>
-        <p>Recicla, acumula puntos y ayuda al planeta</p>
-    </header>
+<header>
+    <h1>♻️ EcoPuntos</h1>
+    <p>Recicla, acumula puntos y ayuda al planeta</p>
+</header>
 
-    <main>
+<main>
 
-        <section class="inicio">
-            <h2>¡Reciclar tiene recompensa!</h2>
+    <!-- REGISTRO -->
+    <section id="registro" class="tarjeta">
+
+        <h2>🌱 Regístrate</h2>
+
+        <p>
+            Ingresa tus datos para comenzar a acumular EcoPuntos.
+        </p>
+
+        <form id="formulario">
+
+            <label for="nombre">Nombre</label>
+            <input
+                type="text"
+                id="nombre"
+                placeholder="Escribe tu nombre"
+                required
+            >
+
+            <label for="curso">Curso</label>
+            <input
+                type="text"
+                id="curso"
+                placeholder="Ej: 2° Medio A"
+                required
+            >
+
+            <label for="correo">Correo electrónico</label>
+            <input
+                type="email"
+                id="correo"
+                placeholder="ejemplo@correo.com"
+                required
+            >
+
+            <button type="submit">
+                Comenzar ♻️
+            </button>
+
+        </form>
+
+    </section>
+
+
+    <!-- PÁGINA PRINCIPAL -->
+    <section id="contenido" class="oculto">
+
+        <section class="bienvenida">
+
+            <h2>¡Hola, <span id="nombreUsuario"></span>! 👋</h2>
 
             <p>
-                Recicla distintos materiales, acumula EcoPuntos
-                y consigue recompensas mientras ayudas a cuidar
-                nuestro planeta.
+                ¡Gracias por ayudar al planeta!
             </p>
+
         </section>
 
+
+        <!-- PUNTOS -->
 
         <section class="puntos">
 
@@ -40,9 +89,11 @@
         </section>
 
 
+        <!-- RECICLAJE -->
+
         <section class="reciclar">
 
-            <h2>♻️ Agregar reciclaje</h2>
+            <h2>♻️ Registrar reciclaje</h2>
 
             <p>
                 Selecciona el material que reciclaste:
@@ -67,40 +118,68 @@
         </section>
 
 
+        <!-- RECOMPENSAS -->
+
         <section class="recompensas">
 
             <h2>🎁 Recompensas</h2>
 
             <div class="recompensa">
                 <h3>100 puntos</h3>
-                <p>Descuento ecológico</p>
+                <p>🌱 Recompensa ecológica</p>
             </div>
 
             <div class="recompensa">
                 <h3>250 puntos</h3>
-                <p>Premio sostenible</p>
+                <p>♻️ Premio sostenible</p>
             </div>
 
             <div class="recompensa">
                 <h3>500 puntos</h3>
-                <p>Gran recompensa</p>
+                <p>🏆 Gran recompensa</p>
             </div>
 
         </section>
 
-    </main>
+
+        <!-- DATOS -->
+
+        <section class="datos">
+
+            <h2>👤 Mis datos</h2>
+
+            <p>
+                <strong>Nombre:</strong>
+                <span id="mostrarNombre"></span>
+            </p>
+
+            <p>
+                <strong>Curso:</strong>
+                <span id="mostrarCurso"></span>
+            </p>
+
+            <p>
+                <strong>Correo:</strong>
+                <span id="mostrarCorreo"></span>
+            </p>
+
+        </section>
+
+    </section>
+
+</main>
 
 
-    <footer>
+<footer>
 
-        <p>
-            🌎 Cada acción cuenta para cuidar nuestro planeta.
-        </p>
+    <p>
+        🌎 Cada acción cuenta para cuidar nuestro planeta.
+    </p>
 
-    </footer>
+</footer>
 
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>

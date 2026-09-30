@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EcoPuntos ♻️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>♻️ EcoPuntos</h1>
+        <p>Recicla, acumula puntos y ayuda al planeta</p>
+    </header>
+
+    <main>
+
+        <section class="inicio">
+            <h2>¡Reciclar tiene recompensa!</h2>
+
+            <p>
+                Recicla distintos materiales, acumula EcoPuntos
+                y consigue recompensas mientras ayudas a cuidar
+                nuestro planeta.
+            </p>
+        </section>
+
+
+        <section class="puntos">
+
+            <h2>🌱 Tus EcoPuntos</h2>
+
+            <div id="contador">0</div>
+
+            <p>Puntos acumulados</p>
+
+        </section>
+
+
+        <section class="reciclar">
+
+            <h2>♻️ Agregar reciclaje</h2>
+
+            <p>
+                Selecciona el material que reciclaste:
+            </p>
+
+            <button onclick="agregarPuntos(10)">
+                🥤 Plástico +10 puntos
+            </button>
+
+            <button onclick="agregarPuntos(15)">
+                📦 Cartón +15 puntos
+            </button>
+
+            <button onclick="agregarPuntos(20)">
+                🥫 Latas +20 puntos
+            </button>
+
+            <button onclick="agregarPuntos(25)">
+                🍾 Vidrio +25 puntos
+            </button>
+
+        </section>
+
+
+        <section class="recompensas">
+
+            <h2>🎁 Recompensas</h2>
+
+            <div class="recompensa">
+                <h3>100 puntos</h3>
+                <p>Descuento ecológico</p>
+            </div>
+
+            <div class="recompensa">
+                <h3>250 puntos</h3>
+                <p>Premio sostenible</p>
+            </div>
+
+            <div class="recompensa">
+                <h3>500 puntos</h3>
+                <p>Gran recompensa</p>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            🌎 Cada acción cuenta para cuidar nuestro planeta.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
